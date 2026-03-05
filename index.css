@@ -433,6 +433,77 @@ ul {
     max-height: 32px;
 }
 
+/* ── Experience Section ── */
+.experience-section {
+    padding: 5rem 0;
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.experience-item {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2.5rem;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.exp-company {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.exp-role {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-top: 0.5rem;
+}
+
+.exp-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.exp-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+}
+
+.exp-list li:last-child {
+    margin-bottom: 0;
+}
+
+.exp-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
 /* ── Projects Section ── */
 .project-card {
     display: grid;
