@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Müşteri kırık parçanın fotoğrafını gönderdi; yedek parça siparişi kendiliğinden açıldı — Koleksiyon için Yapay Zekâ</title>
+<meta name="description" content="Bir WhatsApp fotoğrafı; parça tanıma, garanti kontrolü ve ERP siparişi dakikalar içinde. Adı: Akıllı Montaj &amp; Hasar Analiz Botu.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f172a;--body:#475569;--brand:#4f46e5;--brand2:#4338ca;--navy:#1e1b6e;--soft:#eef0ff;--bg:#f5f7ff;--line:#e0e3f5}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--body);font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;font-size:15px;line-height:1.7}
+a{color:var(--brand)}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+.top{background:#fff;border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;gap:12px;flex-wrap:wrap}
+.brand{font-weight:700;color:var(--navy);font-size:15px;display:flex;align-items:center;gap:12px}.brand img{height:44px;width:auto;display:block}.brand .sep{width:1px;height:30px;background:var(--line)}.brand em{font-style:normal;color:var(--brand)}
+.hl{display:flex;align-items:center;gap:12px;margin-bottom:20px;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#c7d2fe}.hl img{height:68px;width:auto;display:block}
+.crumb{font-size:12px;color:#64748b}
+.hero{background:linear-gradient(135deg,#1e1b6e 0%,#3730a3 50%,#6366f1 100%);color:#fff;padding:44px 0 80px}
+.badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:600;letter-spacing:.4px}
+.hero h1{margin:16px 0 12px;font-size:clamp(24px,5vw,38px);line-height:1.25;font-weight:800}
+.hero p.lead{margin:0;font-size:clamp(15px,2.4vw,17px);color:#e0e7ff;max-width:640px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 10px 25px -5px rgba(15,23,42,.08);padding:26px}
+.pull{margin-top:-52px}
+h2{margin:44px 0 6px;font-size:22px;line-height:1.3;color:var(--ink)}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--brand);text-transform:uppercase;margin:44px 0 0}
+.eyebrow+h2{margin-top:4px}
+.grid{display:grid;gap:14px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:700px){.g2,.g3{grid-template-columns:1fr}.card{padding:20px}}
+.step{display:flex;gap:14px;align-items:flex-start}
+.num{flex:none;width:34px;height:34px;border-radius:10px;background:var(--brand);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.step b,.card b{color:var(--ink)}
+.step p{margin:2px 0 0;font-size:14px}
+.now{border-left:4px solid #94a3b8}.sol{border-left:4px solid var(--brand)}
+.kpi{background:var(--soft);border-radius:14px;padding:16px}.kpi b{display:block;color:var(--brand2);font-size:15px}.kpi span{font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:600;color:var(--brand2)}
+.phase{position:relative;padding-left:20px;border-left:3px solid var(--line)}.phase+.phase{margin-top:18px}
+.phase:before{content:"";position:absolute;left:-9px;top:4px;width:15px;height:15px;border-radius:50%;background:var(--brand);border:3px solid var(--bg)}
+.phase b{display:block;color:var(--ink)}
+.mock{background:#0f172a;color:#e2e8f0;border-radius:14px;padding:18px;font-size:13px}
+.note{font-size:12px;color:#94a3b8;margin-top:10px}
+.bub{border-radius:14px;padding:10px 14px;max-width:88%;font-size:14px;line-height:1.55;margin:8px 0}
+.bu{background:#e0e7ff;color:#1e1b6e;margin-left:auto;border-bottom-right-radius:4px}
+.bb{background:#fff;border:1px solid var(--line);color:var(--body);border-bottom-left-radius:4px}
+.src{display:inline-block;margin-top:6px;background:var(--soft);color:var(--brand2);border-radius:8px;padding:2px 10px;font-size:12px;font-weight:600}
+.chat{background:#f1f5f9;border-radius:14px;padding:14px}
+.cta{background:linear-gradient(135deg,#1e1b6e,#4f46e5);color:#fff;border-radius:16px;padding:30px;text-align:center;margin-top:44px}
+.cta h3{margin:0 0 8px;font-size:20px}.cta p{margin:0 0 18px;color:#e0e7ff}
+.btn{display:inline-block;background:#fff;color:var(--brand2);font-weight:700;border-radius:12px;padding:13px 26px;text-decoration:none}
+.nav{margin:44px 0 0;display:grid;gap:10px}
+.nav a{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;text-decoration:none;color:var(--ink);font-weight:600;font-size:14px}
+.nav a small{display:block;font-weight:400;color:#64748b}
+.nav .n{flex:none;width:30px;height:30px;border-radius:8px;background:var(--soft);color:var(--brand);display:flex;align-items:center;justify-content:center;font-size:13px}
+footer{padding:36px 0 48px;font-size:12px;color:#94a3b8;text-align:center}
+svg{max-width:100%;height:auto;display:block}
+</style></head><body>
+<div class="top"><div class="wrap"><div class="brand"><a href="index.html"><img src="koleksiyon-logo.png" alt="Koleksiyon"></a><span class="sep"></span><span>Yapay Zeka Uzmanı <em>Taylan Tarhan</em></span></div><div class="crumb"><a href="index.html" style="text-decoration:none">← Genel bakış</a> · Proje 4/5</div></div></div>
+<div class="hero"><div class="wrap"><div class="hl"><img src="koleksiyon-logo-beyaz.png" alt="Koleksiyon"><span>için hazırlanmıştır</span></div><span class="badge">Lojistik &amp; Satış Sonrası · Multimodal AI</span><h1>Müşteri kırık parçanın fotoğrafını gönderdi; yedek parça siparişi kendiliğinden açıldı</h1><p class="lead">Bir WhatsApp fotoğrafı; parça tanıma, garanti kontrolü ve ERP siparişi dakikalar içinde. Adı: Akıllı Montaj &amp; Hasar Analiz Botu.</p></div></div>
+<div class="wrap">
+<div class="card pull now"><b>Şu anki durum</b><div style="margin-top:8px"><p style="margin:0 0 8px">Kurulumda zorlanan ya da taşımada hasar gören ürünlerin fotoğrafı e-posta/WhatsApp ile müşteri hizmetlerine geliyor.</p><p style="margin:0 0 8px">Her talep elle inceleniyor; parçayı bulmak, garantiyi kontrol etmek ve sipariş açmak günler alabiliyor.</p></div></div>
+<div class="eyebrow">Önerdiğim çözüm</div><h2>Nasıl çalışır?</h2><div class="grid"><div class="card step"><div class="num">1</div><div><b>Fotoğrafı al</b><p>WhatsApp veya web destek hattından gelen hasar/montaj fotoğrafı multimodal model tarafından yorumlanır.</p></div></div><div class="card step"><div class="num">2</div><div><b>Parçayı tanı</b><p>Görüntü, ürün ve yedek parça kataloğuyla eşleştirilir; örneğin “büfe sol menteşe kapağı” ya da “fincan kulpu” parça koduyla bulunur.</p></div></div><div class="card step"><div class="num">3</div><div><b>Garantiyi kontrol et</b><p>Müşteri/sipariş kaydı ERP’den çekilir; garanti ve sevkiyat tarihi doğrulanır.</p></div></div><div class="card step"><div class="num">4</div><div><b>Siparişi aç</b><p>Uygunsa yedek parça siparişi ERP’ye yazılır; müşteriye takip bilgisi gider. Belirsiz vakalar insan temsilciye devredilir.</p></div></div></div>
+<div class="eyebrow">Somut örnek</div><h2>Bir talep nasıl akar?</h2>
+<div class="card" style="padding:14px"><div class="chat"><div class="bub bu">📷 [Büfenin kırık menteşe kapağının fotoğrafı]<br>Kapak kırıldı, ne yapabilirim?</div>
+<div class="bub bb">Fotoğraftaki parça: <b>büfe sol menteşe kapağı</b> olarak tanındı. Garantiniz devam ediyor, ücretsiz değişim hakkınız var. Siparişinizi açıyorum.<br><span class="src">✔ Garanti: geçerli</span> <span class="src">✔ ERP sipariş: açıldı</span></div>
+<div class="bub bb">Yedek parça 2–3 iş gününde adresinize gönderilecek. Takip bilgisi SMS ile iletilecek.</div></div><div class="note" style="color:#64748b;padding:0 6px 4px">Örnek gösterim: Parça adı ve kod anlatım amaçlıdır.</div></div>
+<div class="eyebrow">Sonuç</div><h2>Neyi ölçeriz, ne kazanırız?</h2>
+<div class="card sol"><b>Sağlayacağı değer</b><p style="margin:6px 0 0">Satış sonrası operasyon maliyetlerini düşürür; servis çözüm süresini günlerden dakikalara indirerek marka algısını güçlendirir.</p></div>
+<div class="grid g2" style="margin-top:14px"><div class="kpi"><b>Çözüm süresi</b><span>Talepten sipariş açılışına geçen süre</span></div><div class="kpi"><b>Otomatik çözülen oran</b><span>İnsan müdahalesi olmadan kapanan talep yüzdesi</span></div><div class="kpi"><b>Yanlış parça gönderimi</b><span>Hatalı parça kaynaklı ikinci sevkiyat</span></div><div class="kpi"><b>Müşteri memnuniyeti</b><span>Satış sonrası puanı / marka algısı</span></div></div>
+<div class="eyebrow">Altyapı</div><h2>Teknoloji yığını</h2><div class="chips"><span class="chip">Multimodal LLM</span><span class="chip">Görüntü eşleştirme</span><span class="chip">WhatsApp Business API</span><span class="chip">ERP/CRM API entegrasyonu</span><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">İnsana devir (human-in-the-loop)</span></div>
+<div class="eyebrow">Yol haritası</div><h2>Küçük başla, ölç, büyüt</h2><div class="card"><div class="phase"><b>Keşif &amp; veri</b>Geçmiş destek talepleri ve fotoğrafları incelenir; en sık 20 parça/hasar tipi belirlenir.</div><div class="phase"><b>Pilot</b>Tek ürün grubunda bot önerir, temsilci onaylar; doğruluk ölçülür.</div><div class="phase"><b>Otomasyon</b>Yüksek güvenli vakalar uçtan uca otomatik; belirsizler insana yönlendirilir.</div></div>
+<div class="cta"><h3>Bunu Tekirdağ’da birlikte hayata geçirelim</h3><p>Pilot kapsamı için kısa bir görüşme yeterli.</p><a class="btn" href="mailto:taylan@kadrajans.com.tr?subject=Koleksiyon%20-%20montaj-hasar-botu">Görüşme talep et</a></div>
+<div class="eyebrow" style="margin-top:44px">Diğer projeler</div><div class="nav"><a href="index.html"><span class="n">★</span><span>Tüm projelere genel bakış<small>Mimari, yol haritası ve sık sorulan sorular</small></span></a><a href="kalite-kusur-tespiti.html"><span class="n">1</span><span>Kusurlu ürün paketlenmeden önce yakalanabilir mi?<small>Fabrika &amp; Üretim Hattı · Computer Vision</small></span></a><a href="koleksiyon-brain.html"><span class="n">2</span><span>Calder koltuğunun kolçak tork değerini saniyeler içinde bulsanız?<small>Kurum İçi Teknik Asistan · RAG &amp; LLM</small></span></a><a href="ai-mekan-kuratoru.html"><span class="n">3</span><span>Boş bir salon fotoğrafı, saniyeler içinde Koleksiyon mekânına dönüşse?<small>Satış &amp; E-Ticaret · Generative AI (Kadrajans)</small></span></a><a href="talep-fire-optimizasyonu.html"><span class="n">5</span><span>Her kesimde biraz kumaş çöpe gidiyor. Ya gitmeseydi?<small>Planlama &amp; Tedarik · Tahminsel Analitik</small></span></a></div>
+</div><footer><div class="wrap">© 2026 Taylan Tarhan · <a href="https://taylan-nu.vercel.app">taylan-nu.vercel.app</a> · <a href="https://kadrajans.vercel.app">Kadrajans</a></div></footer></body></html>
