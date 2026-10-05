@@ -11,7 +11,8 @@ a{color:var(--brand)}
 .wrap{max-width:860px;margin:0 auto;padding:0 20px}
 .top{background:#fff;border-bottom:1px solid var(--line)}
 .top .wrap{display:flex;justify-content:space-between;align-items:center;padding:16px 20px;gap:12px;flex-wrap:wrap}
-.brand{font-weight:700;color:var(--navy);font-size:15px}.brand span{color:var(--brand)}
+.brand{font-weight:700;color:var(--navy);font-size:15px;display:flex;align-items:center;gap:12px}.brand img{height:44px;width:auto;display:block}.brand .sep{width:1px;height:30px;background:var(--line)}.brand em{font-style:normal;color:var(--brand)}
+.hl{display:flex;align-items:center;gap:12px;margin-bottom:20px;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#c7d2fe}.hl img{height:68px;width:auto;display:block}
 .crumb{font-size:12px;color:#64748b}
 .hero{background:linear-gradient(135deg,#1e1b6e 0%,#3730a3 50%,#6366f1 100%);color:#fff;padding:44px 0 80px}
 .badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:5px 14px;font-size:12px;font-weight:600;letter-spacing:.4px}
@@ -51,8 +52,8 @@ h2{margin:44px 0 6px;font-size:22px;line-height:1.3;color:var(--ink)}
 footer{padding:36px 0 48px;font-size:12px;color:#94a3b8;text-align:center}
 svg{max-width:100%;height:auto;display:block}
 </style></head><body>
-<div class="top"><div class="wrap"><div class="brand">Yapay Zeka Uzmanı <span>Taylan Tarhan</span></div><div class="crumb"><a href="index.html" style="text-decoration:none">← Genel bakış</a> · Proje 4/5</div></div></div>
-<div class="hero"><div class="wrap"><span class="badge">Lojistik &amp; Satış Sonrası · Multimodal AI</span><h1>Müşteri kırık parçanın fotoğrafını gönderdi; yedek parça siparişi kendiliğinden açıldı</h1><p class="lead">Bir WhatsApp fotoğrafı; parça tanıma, garanti kontrolü ve ERP siparişi dakikalar içinde. Adı: Akıllı Montaj &amp; Hasar Analiz Botu.</p></div></div>
+<div class="top"><div class="wrap"><div class="brand"><a href="index.html"><img src="koleksiyon-logo.png" alt="Koleksiyon"></a><span class="sep"></span><span>Yapay Zeka Uzmanı <em>Taylan Tarhan</em></span></div><div class="crumb"><a href="index.html" style="text-decoration:none">← Genel bakış</a> · Proje 4/5</div></div></div>
+<div class="hero"><div class="wrap"><div class="hl"><img src="koleksiyon-logo-beyaz.png" alt="Koleksiyon"><span>için hazırlanmıştır</span></div><span class="badge">Lojistik &amp; Satış Sonrası · Multimodal AI</span><h1>Müşteri kırık parçanın fotoğrafını gönderdi; yedek parça siparişi kendiliğinden açıldı</h1><p class="lead">Bir WhatsApp fotoğrafı; parça tanıma, garanti kontrolü ve ERP siparişi dakikalar içinde. Adı: Akıllı Montaj &amp; Hasar Analiz Botu.</p></div></div>
 <div class="wrap">
 <div class="card pull now"><b>Şu anki durum</b><div style="margin-top:8px"><p style="margin:0 0 8px">Kurulumda zorlanan ya da taşımada hasar gören ürünlerin fotoğrafı e-posta/WhatsApp ile müşteri hizmetlerine geliyor.</p><p style="margin:0 0 8px">Her talep elle inceleniyor; parçayı bulmak, garantiyi kontrol etmek ve sipariş açmak günler alabiliyor.</p></div></div>
 <div class="eyebrow">Önerdiğim çözüm</div><h2>Nasıl çalışır?</h2><div class="grid"><div class="card step"><div class="num">1</div><div><b>Fotoğrafı al</b><p>WhatsApp veya web destek hattından gelen hasar/montaj fotoğrafı multimodal model tarafından yorumlanır.</p></div></div><div class="card step"><div class="num">2</div><div><b>Parçayı tanı</b><p>Görüntü, ürün ve yedek parça kataloğuyla eşleştirilir; örneğin “büfe sol menteşe kapağı” ya da “fincan kulpu” parça koduyla bulunur.</p></div></div><div class="card step"><div class="num">3</div><div><b>Garantiyi kontrol et</b><p>Müşteri/sipariş kaydı ERP’den çekilir; garanti ve sevkiyat tarihi doğrulanır.</p></div></div><div class="card step"><div class="num">4</div><div><b>Siparişi aç</b><p>Uygunsa yedek parça siparişi ERP’ye yazılır; müşteriye takip bilgisi gider. Belirsiz vakalar insan temsilciye devredilir.</p></div></div></div>
